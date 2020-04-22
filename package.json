@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "repository": "https://github.com/qwright10/akairo-bot.git",
   "author": "Quentin Wright <wrightq00@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
   "scripts": {
     "build": "tsc -p .",
