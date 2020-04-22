@@ -1,0 +1,41 @@
+{
+  "name": "akairo-bot",
+  "version": "2.0.0",
+  "description": "A Typescript-based Discord bot.",
+  "main": "build/index.js",
+  "repository": "https://github.com/qwright10/akairo-bot.git",
+  "author": "Quentin Wright <wrightq00@gmail.com>",
+  "license": "UNLICENSED",
+  "private": false,
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "nodemon build/index.js",
+    "daemonize": "tsc -p . && pm2 start build/bot.js",
+    "watch": "tsc -p . --watch"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord-akairo": "discord-akairo/discord-akairo",
+    "discord.js": "discordjs/discord.js",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
+    "node-emoji": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "pg": "^8.0.2",
+    "typeorm": "^0.2.24"
+  },
+  "devDependencies": {
+    "@types/common-tags": "^1.8.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.11.1",
+    "@types/node-emoji": "^1.8.1",
+    "@types/node-fetch": "^2.5.6",
+    "@types/ws": "^7.2.4",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  }
+}

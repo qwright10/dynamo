@@ -1,0 +1,13 @@
+# Modules
+node_modules/
+
+# Config
+.env
+.eslintrc.json
+*.code-workspace
+
+# Build
+build/
+
+# Misc
+.DS_STORE
