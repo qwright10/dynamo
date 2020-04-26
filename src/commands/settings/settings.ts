@@ -8,6 +8,7 @@ export default class SettingsCommand extends Command {
             aliases: ['settings', 'config'],
             description: 'Configures bot settings.',
             category: 'settings',
+            channel: 'guild',
             cooldown: 5000,
             ratelimit: 2
         });
