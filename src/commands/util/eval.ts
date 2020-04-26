@@ -44,7 +44,8 @@ export default class EvalCommand extends Command {
             const res = await fetch('https://hastebin.com/documents', {
                 method: 'POST',
                 body: inspected
-            }).then(r => r.json());
+            }).then(r => r.json()).catch(this.client.logger.error);
+            if (!res) return new MessageEmbed().setDescription('Something went wrong.');
             return new MessageEmbed()
                 .setURL(`https://hastebin.com/${res.key}.js`)
                 .setDescription(`https://hastebin.com/${res.key}.js`);
